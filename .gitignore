@@ -1,0 +1,52 @@
+# Ignore Visual Studio specific files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build outputs
+bin/
+obj/
+Debug/
+Release/
+*.exe
+*.dll
+*.pdb
+*.log
+
+# Ignore NuGet packages
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+PackageReferenceCache/
+
+# Ignore temporary files
+*.tmp
+*.cache
+*.log
+*.lck
+
+# Ignore Rider IDE files
+.idea/
+*.sln.iml
+
+# Ignore Resharper files
+_ReSharper*/
+*.DotSettings.user
+
+# Ignore database and generated files
+App_Data/
+appsettings*.json
+secrets.json
+
+# Ignore .NET Core and ASP.NET Core specific files
+wwwroot/
+node_modules/
+dist/
+npm-debug.log
+yarn.lock
+
+# Ignore Docker files (if using Docker)
+docker-compose.override.yml

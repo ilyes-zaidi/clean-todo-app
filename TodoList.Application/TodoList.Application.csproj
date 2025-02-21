@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Behaviours\" />
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Tasks\Commands\AddTask\" />
+    <Folder Include="Tasks\Commands\UpdateTask\" />
+    <Folder Include="Tasks\Commands\RemoveTask\" />
+    <Folder Include="Tasks\Queries\GetTasksById\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TodoList.Domain\TodoList.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
