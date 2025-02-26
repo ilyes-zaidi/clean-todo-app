@@ -12,7 +12,7 @@ public class GetTaskByIdQueryHandler : IRequestHandler<GetTaskByIdQuery, TaskDto
     private readonly ITaskRepository _taskRepository;
     private readonly IMapper _mapper;
 
-
+    
     public GetTaskByIdQueryHandler(ITaskRepository taskRepository, IMapper mapper)
     {
         _taskRepository = taskRepository;
